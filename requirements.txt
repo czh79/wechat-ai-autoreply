@@ -1,0 +1,15 @@
+# 微信 AI 自动回复助手 — 运行依赖
+Pillow>=10.0.0          # 截图处理
+numpy>=1.24.0           # 图像数组计算
+opencv-python>=4.8.0    # 红点检测
+pyautogui>=0.9.54       # 模拟鼠标键盘
+pyperclip>=1.8.2        # 剪贴板操作
+pygetwindow>=0.0.9      # 窗口管理
+pywin32>=306            # Windows API
+requests>=2.31.0        # 调用 DeepSeek / Ollama 接口
+pdfplumber>=0.10.0      # PDF 解析（知识库）
+python-docx>=0.8.11     # Word 解析（知识库）
+
+# ── OCR 引擎（二选一，不装则回退 Windows 内置 WinRT OCR）──
+#   pip install paddlepaddle paddleocr        # 方案 A：准确率最高
+#   pip install rapidocr-onnxruntime          # 方案 B：轻量约 30MB
